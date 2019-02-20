@@ -27,7 +27,7 @@ io.sockets.on('connection', function (socket, username) {
     }); 
 });
 
-app.listen(8080);
+app.listen(3000);
 
 /*app.listen(8080, '9.251.54.221', function() {
     console.log('Listening to port:  ' + 8080);
