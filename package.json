@@ -8,6 +8,9 @@
         "mitol": "0.0.11",
         "socket.io": "~1.2.1"
     },
+     "scripts": {
+    	   "start": "node app.js"
+    	    },
     "author": "Mateo21 <mateo21@email.com>",
     "description": "A real-time super chat with socket .io"
 }
