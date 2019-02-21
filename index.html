@@ -27,10 +27,11 @@
 
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script src="/socket.io/socket.io.js"></script>
+         <script src="globals.js"></script>
         <script>
-
+        var globals = require('./globals'); 
             // Connecting to socket.io
-            var socket = io.connect();
+            var socket = io.connect(globals.url+':'+globals.port);
 
             // The username is requested, sent to the server and displayed in the title
             var username = prompt('What\'s your username?');

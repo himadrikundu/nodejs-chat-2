@@ -4,6 +4,9 @@ var app = require('express')(),
     ent = require('ent'), // Blocks HTML characters (security equivalent to htmlentities in PHP)
     fs = require('fs');
 
+var globals = require('./globals.js'); 
+
+
 //----
 //const http = require('mitol');
 
@@ -27,7 +30,7 @@ io.sockets.on('connection', function (socket, username) {
     }); 
 });
 
-app.listen(process.env.PORT);
+app.listen(globals.port);
 
 /*app.listen(8080, '9.251.54.221', function() {
     console.log('Listening to port:  ' + 8080);
