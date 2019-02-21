@@ -1,6 +1,5 @@
 var Globals = {
-    'url':'https://nodejs-chat-2.herokuapp.com',
-    'port': '8080'
+    'url':'nodejs-chat-2.herokuapp.com'
 }
 
 module.exports = Globals;
