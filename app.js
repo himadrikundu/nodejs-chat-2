@@ -30,8 +30,13 @@ io.sockets.on('connection', function (socket, username) {
     }); 
 });
 
-console.log("port"+ process.env.PORT || '3000');
-app.listen(process.env.PORT || '3000');
+var port =process.env.PORT || '3000';
+console.log("port"+ port);
+//app.listen(process.env.PORT || '3000');
+app.listen(port, function () {
+	  var addr = app.address();
+	  console.log('   app listening on http://' + addr.address + ':' + addr.port);
+	});
 
 /*app.listen(8080, '9.251.54.221', function() {
     console.log('Listening to port:  ' + 8080);
