@@ -27,12 +27,13 @@
 
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-         <script src="globals.js"></script>
+        
         <script>
-        var globals = require('./globals'); 
+       
+        console.log("connecting");
             // Connecting to socket.io
             var socket = io.connect(window.location.hostname);
-
+            console.log("connected"+ socket);
             // The username is requested, sent to the server and displayed in the title
             var username = prompt('What\'s your username?');
             socket.emit('new_client', username);
