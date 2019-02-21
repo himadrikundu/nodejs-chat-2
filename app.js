@@ -30,7 +30,8 @@ io.sockets.on('connection', function (socket, username) {
     }); 
 });
 
-app.listen();
+console.log("port"+ globals.port);
+app.listen(globals.port);
 
 /*app.listen(8080, '9.251.54.221', function() {
     console.log('Listening to port:  ' + 8080);

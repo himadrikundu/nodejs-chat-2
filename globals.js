@@ -1,5 +1,2 @@
-var Globals = {
-    'url':'nodejs-chat-2.herokuapp.com'
-}
-
+		const Globals=process.env.PORT || 3000;
 module.exports = Globals;
